@@ -7,7 +7,7 @@ local supported_games = {
 };
 
 getgenv().hub_enviorment = {
-	hub_version = game:HttpGet("https://raw.githubusercontent.com/luna-xyz/roblox/refs/heads/main/version.txt");
+	hub_version = game:HttpGet("https://raw.githubusercontent.com/114S14/GERM/refs/heads/main/version.txt");
 };
 
 function hub_enviorment:Notify(text)
