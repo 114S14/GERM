@@ -1,9 +1,9 @@
 if getgenv().hub_enviorment then
-	return warn("luna.xyz is already loaded!")
+	return warn("GERM")
 end
 
 local supported_games = {
-	["rakoof"] = 15367709476,
+	["name"] = 123456789,
 };
 
 getgenv().hub_enviorment = {
@@ -14,7 +14,7 @@ function hub_enviorment:Notify(text)
 
 	game:GetService("StarterGui"):SetCore("SendNotification", {
 
-		Title = 'luna.xyz ' .. tostring(hub_enviorment.hub_version),
+		Title = 'GERM' .. tostring(hub_enviorment.hub_version),
 		Text = tostring(text),
 
 		Duration = 3,
@@ -24,11 +24,11 @@ end;
 for i, v in supported_games do
 	
 	if tostring(game.PlaceId) == tostring(v) then
-		return loadstring(game:HttpGet('https://raw.githubusercontent.com/luna-xyz/roblox/refs/heads/main/games/' .. tostring(i) .. '.lua'))();
+		return loadstring(game:HttpGet('https://raw.githubusercontent.com/114S14/GERM/refs/heads/main/games/' .. tostring(i) .. '.lua'))();
 	end;
 end;
 
 getgenv().hub_enviorment = nil;
 
 local LP = game:GetService("Players").LocalPlayer;
-pcall(function() LP:Kick('This game is not supported!\n\nVersion: ' .. tostring(hub_enviorment.hub_version)) end);
+pcall(function() LP:Kick('不支持这个游戏!\n\n版本: ' .. tostring(hub_enviorment.hub_version)) end);
