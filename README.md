@@ -5,7 +5,5 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/114S14/GERM/refs/head
 ```
 ## discord
  加入我的discord頻道
- ```bash
-```
 
 [https://discord.gg/GERMHUB](https://discord.gg/VwvYpu2F)
